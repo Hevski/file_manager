@@ -21,6 +21,7 @@ public class Folder {
 
     @JsonIgnoreProperties("folders")
     @ManyToOne
+//    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 

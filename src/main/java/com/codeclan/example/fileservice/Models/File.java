@@ -24,6 +24,7 @@ public class File {
 
     @JsonIgnoreProperties("files")
     @ManyToOne
+//    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     @JoinColumn(name = "folder_id", nullable = false)
     private Folder folder;
 
